@@ -1,4 +1,4 @@
-package com.sz.dao.impl;
+﻿package com.sz.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.sz.dao.UserDao;
 import com.sz.pojo.User;
-
 
 public class UserDaoImpl implements UserDao {
 	// 根据用户名和密码查询用户信息

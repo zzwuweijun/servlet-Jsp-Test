@@ -10,7 +10,7 @@
 </head>
 <body>
 	<hr>
-	<form action="user" method="get">
+	<form action="/myServlet1/user" method="get">
 		<input type="hidden" name="oper" value="login">
 		<label>用户名：</label>
 		<input type="text" name="uname" placeholder="请输入用户名" />

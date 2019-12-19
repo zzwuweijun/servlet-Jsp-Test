@@ -61,19 +61,23 @@
 
 	<!-- 设置欢迎页面。 -->
 	<welcome-file-list>
-		<welcome-file>index.htm</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>main/index.htm</welcome-file>
+		<welcome-file>main/index.jsp</welcome-file>
+		<welcome-file>main/default.htm</welcome-file>
+		<welcome-file>main/default.jsp</welcome-file>
 	</welcome-file-list>
 
 	<!-- 设置错误页面 -->
 	<error-page>
 		<error-code>404</error-code>
-		<location>/error/404.html</location>
+		<location>/error/404.jsp</location>
 	</error-page>
 	<error-page>
 		<error-code>405</error-code>
-		<location>/error/405.html</location>
+		<location>/error/405.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/405.jsp</location>
 	</error-page>
 </web-app>

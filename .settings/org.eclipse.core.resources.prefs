@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
-encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/error/405.jsp=UTF-8
+encoding//WebContent/main/index.jsp=UTF-8
 encoding//src/com/jdbc/test/Demo1.java=UTF-8
 encoding//src/com/servlet/test/ReSponoseServletTest.java=UTF-8
 encoding//src/com/servlet/test/RequestServletTest.java=UTF-8

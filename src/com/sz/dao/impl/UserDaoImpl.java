@@ -21,17 +21,10 @@ public class UserDaoImpl implements UserDao {
 		User u = null;
 
 		try {
-			// 获取连接
-			con = MySql.getCon();
-			// 创建sql命令
+//			// 创建sql命令
 			String sql = "select * from user where uname=? and pwd=?";
-			// 创建sql命令对象
-			ps = (PreparedStatement) con.prepareStatement(sql);
-			// 给占位符赋值
-			ps.setString(1, uname);
-			ps.setString(2, pwd);
-			// 执行sql
-			rs = ps.executeQuery();
+			rs = MySql.query(sql, uname, pwd);
+			
 			// 遍历结果
 			while (rs.next()) {
 				u = new User();
@@ -41,17 +34,10 @@ public class UserDaoImpl implements UserDao {
 				u.setSex(rs.getString("sex"));
 				u.setAge(rs.getInt("age"));
 				u.setBirth(rs.getString("birth"));
-			}
+			}  
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} finally {
-			// 关闭连接
-			try {
-				MySql.close(con, ps, rs);
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		}
+		} 
 
 		// 返回查询结果
 		return u;
